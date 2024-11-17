@@ -8,15 +8,31 @@ The hybrid CNN-LSTM model achieved a classification accuracy of XX.XX%, demonstr
 
 
 ## Keywords
-- Human Activity Recognition (HAR)
-  - Definition: Refers to the process of identifying and classifying physical activities performed by a person, using sensor data from devices like smartphones or wearables.
-  - Importance in the Project: HAR is the core objective of this project, as it involves accurately predicting activities such as walking, jogging, sitting, and standing using data from accelerometers and gyroscopes.
 
-- CNN-LSTM
-- Autoencoder
-- Anomaly Detection
-- Smartphone Sensors
-- Deep Learning
+- **Human Activity Recognition (HAR)**
+  - **Definition:** Refers to the process of identifying and classifying physical activities performed by a person, using sensor data from devices like smartphones or wearables.
+  - **Importance in the Project:** HAR is the core objective of this project, as it involves accurately predicting activities such as walking, jogging, sitting, and standing using data from accelerometers and gyroscopes.
+
+- **CNN-LSTM**
+  - **Definition:** A hybrid deep learning model combining Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks.
+    - **CNN:** Extracts spatial features from the input data (e.g., local patterns from sensor readings).
+    - **LSTM:** Captures temporal dependencies in sequential data.
+  - **Importance in the Project:** This architecture is used for robust classification of activities, leveraging both spatial and temporal features inherent in sensor data.
+
+- **Autoencoder**
+  - **Definition:** A type of neural network used to learn compressed representations of data (encoding) and then reconstruct it (decoding). It is commonly used for anomaly detection.
+  - **Importance in the Project:** The Autoencoder in this project identifies anomalies in activity patterns by calculating reconstruction errors. Deviations beyond a defined threshold are flagged as anomalies.
+    
+- **Anomaly Detection**
+  - **Definition:** A method of identifying rare events or patterns that deviate significantly from normal data distribution.
+  - **Importance in the Project:** Anomaly detection ensures the reliability of HAR systems by identifying irregular patterns, such as faulty sensor data or outlier activities.
+- **Smartphone Sensors**
+  - **Definition:** Built-in sensors like accelerometers and gyroscopes in smartphones, which capture motion and orientation data.
+  - **Importance in the Project:** Sensor data from smartphones forms the raw input for the HAR process. These readings enable accurate activity classification and anomaly detection.
+- **Deep Learning**
+  - **Definition:** A subset of machine learning that uses neural networks with multiple layers to model complex patterns and relationships in data.
+  - **Importance in the Project:** Deep learning techniques (CNN-LSTM and Autoencoders) are used to classify activities and detect anomalies, surpassing traditional machine learning methods in accuracy and efficiency.
+
 
 ## Background and Literature Review
 Human Activity Recognition is a critical component of applications in health monitoring, fitness tracking, and elder care. Traditional machine learning methods, such as Support Vector Machines (SVMs) and k-Nearest Neighbors (kNN), often fail to capture the spatial and temporal dependencies inherent in sensor data. Recent advancements in deep learning have demonstrated the efficacy of CNNs and LSTMs for HAR tasks.
@@ -24,24 +40,33 @@ Human Activity Recognition is a critical component of applications in health mon
 Anomaly detection, another important aspect of HAR, has traditionally relied on statistical models or clustering techniques. Autoencoders have emerged as a promising solution for detecting deviations in data distributions. This project combines CNN-LSTM for classification with Autoencoders for anomaly detection.
 
 ## Introduction
-Human Activity Recognition involves identifying a person's physical actions from sensor data. Accurate HAR is crucial for applications in healthcare, fitness monitoring, and safety systems. Challenges include:
-- Complexity of Sensor Data: Raw sensor data contains noise and variations.
-- Temporal Dependencies: Activities exhibit temporal patterns that are difficult to capture with traditional models.
-- Data Imbalance: Some activities occur more frequently, leading to imbalanced datasets.
-- Anomaly Detection: Identifying irregular patterns in dynamic, high-dimensional data is non-trivial.
+Human Activity Recognition involves identifying a person's physical actions from sensor data. Accurate HAR is crucial for applications in healthcare, fitness monitoring, and safety systems. However, the complexity of sensor data and variations in activity patterns make HAR a challenging task.
+
+Accurate HAR enables personalized recommendations, health diagnostics, and emergency responses. Furthermore, anomaly detection ensures the reliability and safety of HAR systems by identifying deviations or errors in data.
+
+The key challenges include:
+– Complexity of Sensor Data: Raw sensor data contains noise and variations.
+– Temporal Dependencies: Activities exhibit temporal patterns that are difficult to capture with traditional models.
+– Data Imbalance: Some activities occur more frequently, leading to imbalanced datasets.
+– Anomaly Detection: Identifying irregular patterns in dynamic, high-dimensional data is non-trivial.
+
+Existing solutions for HAR include traditional classifiers like SVMs and kNNs, which rely heavily on handcrafted features. Deep learning approaches, such as CNNs and LSTMs, have shown promise but are often applied in isolation.
 
 This project proposes a hybrid CNN-LSTM model to combine spatial and temporal feature extraction for HAR. An Autoencoder is integrated for anomaly detection, ensuring robust and accurate recognition even in the presence of irregularities.
 
+
 ## Proposed Method
 ### Flowchart of the System
-![Flowchart of the Proposed Work](path_to_flowchart_image)
+![Flowchart of the Proposed Work](/img/flowchart.png)
 
 ### Architecture of the CNN-LSTM Model
-![Architecture of the Proposed CNN-LSTM Model](path_to_architecture_diagram)
+![Architecture of the Proposed CNN-LSTM Model](img/archOfModel.png)
 
 The CNN-LSTM hybrid architecture extracts spatial features using CNN layers and captures temporal dependencies with LSTM layers. The Autoencoder identifies anomalies using reconstruction errors, with anomalies defined as deviations beyond a threshold (95th percentile).
 
 ## Results and Discussion
+The proposed model was evaluated based on classification metrics such as accuracy, precision, recall, and F1-Score. Anomaly detection performance was measured using the Area Under the Curve (AUC) of the Receiver Operating Characteristic (ROC).
+
 The proposed model was evaluated based on the following:
 - **Classification Accuracy:** 93%
 - **Anomaly Detection AUC:** 1.00
@@ -58,7 +83,7 @@ The proposed model was evaluated based on the following:
 
 ### Graphs
 - Training vs. Validation Accuracy and Loss:
-  ![Training vs Validation Accuracy](path_to_graph_image)
+  ![Training vs Validation Accuracy](imp/grqph)
 
 ## Conclusion and Future Work
 This project successfully combines a CNN-LSTM hybrid model for HAR with an Autoencoder for anomaly detection. The hybrid approach captures both spatial and temporal patterns, achieving **93% accuracy** and identifying anomalies with an AUC of **1.00**. Future work includes:
@@ -73,4 +98,4 @@ This project successfully combines a CNN-LSTM hybrid model for HAR with an Autoe
 4. Bengio, Y. (2009). Learning deep architectures for AI. Foundations and trends in Machine Learning.
 
 ## GitHub Project Link
-[Add your GitHub project link here](#)
+[(https://github.com/tanishhky/HumanActivityRecogUsingCNNLSTM/)](#)
