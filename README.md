@@ -1,5 +1,10 @@
 # Advanced Human Activity Recognition and Anomaly Detection Using Hybrid CNN-LSTM and Autoencoders
 
+### Project By
+- Tanishk Yadav
+- Sanjana Maini
+- Nageshwar Prasad Yadav
+
 ## Abstract
 Human Activity Recognition (HAR) plays a vital role in various applications such as healthcare, fitness monitoring, and human-computer interaction. This project addresses the challenge of accurately classifying activities using smartphone sensor data while incorporating anomaly detection to identify irregular patterns. Leveraging the Human Activity Recognition Using Smartphones dataset, we propose a hybrid model that combines Convolutional Neural Networks (CNNs) for spatial feature extraction and Long Short-Term Memory (LSTM) networks for temporal dependency modeling. Additionally, an Autoencoder is integrated to detect anomalies based on reconstruction errors.
 
