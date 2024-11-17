@@ -3,10 +3,15 @@
 ## Abstract
 Human Activity Recognition (HAR) plays a vital role in various applications such as healthcare, fitness monitoring, and human-computer interaction. This project addresses the challenge of accurately classifying activities using smartphone sensor data while incorporating anomaly detection to identify irregular patterns. Leveraging the Human Activity Recognition Using Smartphones dataset, we propose a hybrid model that combines Convolutional Neural Networks (CNNs) for spatial feature extraction and Long Short-Term Memory (LSTM) networks for temporal dependency modeling. Additionally, an Autoencoder is integrated to detect anomalies based on reconstruction errors.
 
-The hybrid CNN-LSTM model achieved a classification accuracy of **93%**, demonstrating its capability to handle complex activity patterns. The Autoencoder successfully flagged anomalies with a high Area Under the Curve (AUC) score of **1.00**. Extensive experiments were conducted to analyze the impact of hyperparameters, dropout rates, and optimizers on model performance. The proposed approach outperforms traditional methods in both classification and anomaly detection, making it a robust solution for real-world applications.
+
+The hybrid CNN-LSTM model achieved a classification accuracy of XX.XX%, demonstrating its capability to handle complex activity patterns. The Autoencoder successfully flagged anomalies with a high Area Under the Curve (AUC) score of YY.YY. Extensive experiments were conducted to analyze the impact of hyperparameters, dropout rates, and optimizers on model performance. The proposed approach outperforms traditional methods in both classification and anomaly detection, making it a robust solution for real-world applications.
+
 
 ## Keywords
 - Human Activity Recognition (HAR)
+  - Definition: Refers to the process of identifying and classifying physical activities performed by a person, using sensor data from devices like smartphones or wearables.
+  - Importance in the Project: HAR is the core objective of this project, as it involves accurately predicting activities such as walking, jogging, sitting, and standing using data from accelerometers and gyroscopes.
+
 - CNN-LSTM
 - Autoencoder
 - Anomaly Detection
