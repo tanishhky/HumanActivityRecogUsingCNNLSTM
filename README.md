@@ -88,7 +88,7 @@ The proposed model was evaluated based on the following:
 
 ### Graphs
 - Training vs. Validation Accuracy and Loss:
-  ![Training vs Validation Accuracy](imp/grqph)
+  ![Training vs Validation Accuracy](imp/grqph.png)
 
 ## Conclusion and Future Work
 This project successfully combines a CNN-LSTM hybrid model for HAR with an Autoencoder for anomaly detection. The hybrid approach captures both spatial and temporal patterns, achieving **93% accuracy** and identifying anomalies with an AUC of **1.00**. Future work includes:
